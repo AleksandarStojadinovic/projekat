@@ -1,0 +1,91 @@
+
+
+  body {
+    width: 100%;
+    height: 100%;
+    justify-content: stretch;
+    align-self: stretch;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    white-space: nowrap;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(65, 98,172);
+    min-width: 785px;
+}
+
+
+tr:hover {
+    background-color: rgb(220,105,0);
+}
+
+table,
+tr,
+th,
+td {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    table-layout: fixed;
+    border: 2px solid rgb(220,105,0);
+}
+
+table {
+    border-collapse: collapse;
+    background-color: rgb(65, 98,172);
+}
+
+input {
+    display: block;
+}
+
+select
+{
+    display: block;
+}
+
+.igdiv 
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   padding-top: 10px;
+}
+
+.mdiv 
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   padding: 5px;
+}
+
+.pdiv 
+{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   padding: 5px;
+}
+
+.pocetnib
+{
+    color: white;
+    font-size: 35px;
+    background-color: rgb(65, 98,172);
+    height: 75px;
+    width: 300px;
+    margin: 5px;
+}
