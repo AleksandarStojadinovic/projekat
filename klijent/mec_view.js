@@ -27,11 +27,12 @@ img.addEventListener("click",(e) => {
 
 var glkontejner = document.createElement("div");
 document.body.appendChild(glkontejner);
-glkontejner.className="mdiv"
+glkontejner.className="mdiv";
 
 
 var kontejner2 = document.createElement("div");
 glkontejner.appendChild(kontejner2);
+kontejner2.className="k2div";
 
 
 var queryString1 = decodeURIComponent(window.location.search);
@@ -54,7 +55,7 @@ for(let i=1; i<27;i++){
     selX.appendChild(opcija);
 }
 
-
+//tabela utakmica
 
 var table2 = document.createElement("table");
 kontejner2.appendChild(table2);
@@ -105,7 +106,7 @@ kontejner1.style.paddingTop="35px";
 kontejner1.style.paddingLeft="10px";
 
 var clubs=[];
-
+//forma za unos meceva
 let result = await fetch("https://localhost:5001/Klub/Svi_klubovi/"+queryString1);
 let klubovi = await result.json();
 
@@ -184,6 +185,7 @@ fetch("https://localhost:5001/Sudija/Sve_sudije")
 const dugme = document.createElement("button");
 dugme.innerHTML="Dodaj mec";
 kontejner1.appendChild(dugme);
+kontejner1.className="kmec";
 dugme.style.marginTop="5px";
 
 

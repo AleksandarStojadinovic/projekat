@@ -14,7 +14,7 @@ document.body.appendChild(glkontejner);
 glkontejner.className="pdiv";
 
 var kontejnerp = document.createElement("div");
-kontejnerp.className="mdiv";
+kontejnerp.className="mmmdiv";
 
 
 
@@ -46,12 +46,16 @@ var kontejner = document.createElement("div");
 glkontejner.appendChild(kontejner);
 kontejner.className="mdiv";
 
+// ucitavanje grba u kontejner, kontejner u glkontejner
+
 let imgg = document.createElement("img");
 imgg.src ="grb/"+cl+".jpg"
 imgg.height = "300";
 imgg.width = "270";
 imgg.style.marginRight="100px";
 kontejner.appendChild(imgg);
+
+//tabela igraca u kontejner, kontejner u glkontejner
 
 var table1 = document.createElement("table");
 kontejner.appendChild(table1);
@@ -139,9 +143,10 @@ let igraci=await result.json();
                     window.alert("Losa statistika");
                 })
         })
-
+        // forma za unos igraca, u kontejner2, kontejner2 u kontejner
         var kontejner2 = document.createElement("div");
         kontejner.appendChild(kontejner2);
+        kontejner2.className="kdiv";
         
         var lista = ["Ime:", "Prezime:", "Godina rodjenja:", "Drzavljanstvo:","Utakmica:","Poeni:", "Asistencije:","Skokovi:"];
         var lista2 = ["ime", "prezime", "godina_rodjenja", "drzava","utakmica","poeni", "asistencije","skokovi"];
@@ -167,7 +172,7 @@ let igraci=await result.json();
         }
 
 
-//-----------------------------------------------------
+//tabela utakmica, u kontejnerp kontejner p u gl kontejner
 
 
 
@@ -222,11 +227,11 @@ var rows,switching, i, x, y, shouldSwitch;
     }
 
 
-
+// grafikon u kontejner5, kontejner 5 u pkontejner
 
 
 let kontejner5 = document.createElement("div");
-document.body.appendChild(kontejner5);
+kontejner5.className="graf";
 
 let sel= document.createElement("select");
 sel.className="statistika";

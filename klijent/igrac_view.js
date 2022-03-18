@@ -39,6 +39,7 @@ var igr=[];
 
 var result =await fetch("https://localhost:5001/Igrac/Svi_igraci_liga/" + queryString1)
 let igraci = await result.json();
+
 igraci.forEach(async (i)=>
 {
     var ii = new Igrac(i.ime,i.prezime,i.utakmica,i.poena,i.skokova,i.asistencija,i.godina,i.drzava,i.klub)

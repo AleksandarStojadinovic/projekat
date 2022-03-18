@@ -72,6 +72,14 @@ select
    padding: 5px;
 }
 
+.mmmdiv 
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   padding: 5px;
+}
+
 .pdiv 
 {
    display: flex;
@@ -89,3 +97,68 @@ select
     width: 300px;
     margin: 5px;
 }
+
+@media screen and (max-width: 600px) {
+    .igdiv {
+        width: 100%;
+    }
+
+    .igdiv > table {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .kmec {
+        width: 100%;
+    }
+
+    .kmec > select {
+        width: 100%;
+    }
+    .kmec > input {
+        width: 98%;
+    }
+    .kmec > button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .k2div {
+        width: 100%;
+    }
+
+    .k2div > table {
+        width: 100%;
+    }
+    .k2div > select {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .kdiv {
+        width: 100%;
+    }
+
+    .kdiv > select {
+        width: 100%;
+    }
+    .kdiv > input {
+        width: 98%;
+    }
+    .kdiv > button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mmmdiv {
+        width: 100%;
+    }
+
+    .mmmdiv > table {
+        width: 100%;
+    }
+}
+

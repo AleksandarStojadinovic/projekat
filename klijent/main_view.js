@@ -2,7 +2,7 @@ var header = document.createElement("header");
 
 document.body.appendChild(header);
 
-
+//zaglavlje
 var kontejner = document.createElement("div");
 document.body.appendChild(kontejner);
 document.body.style.backgroundColor="rgb(220,105,0)";
@@ -58,7 +58,7 @@ fetch("https://localhost:5001/Sezona/Pregledaj_sezonu")
     })
 })
 
-
+//dugmad
 
 var s = sel.value;
 var value1= s;
